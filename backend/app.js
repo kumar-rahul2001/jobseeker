@@ -17,7 +17,8 @@ console.log("JWT_SECRET:", process.env.JWT_SECRET);
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    // origin: ["http://localhost:5173"],
+    origin: ["https://jobseeker-client.vercel.app"],
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
